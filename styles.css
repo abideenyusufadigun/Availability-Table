@@ -1,0 +1,59 @@
+:root {
+    --color0: #90ee90;
+    --color1: #32cd32;
+    --color2: white;
+    --color3: #ccffcc;
+    --color4: #006400;
+    --color5: #66ffcc;
+    --solid-border: 2px solid #333;
+    --dashed-border: 2px dashed #999;
+}
+
+body {
+  background-color: rgba(24, 249, 3, 0.171);
+}
+
+  table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  .available-0 { background-color: var(--color0); }
+  .available-1 { background-color: var(--color1); }
+  .available-2 { background-color: var(--color2); }
+  .available-3 { background-color: var(--color3); }
+  .available-4 { background-color: var(--color4); }
+  .available-5 { background-color: var(--color5); }
+
+.sharp td {
+    border-bottom: var(--solid-border);
+  }
+
+  .half td {
+    border-bottom: var(--dashed-border);
+  }
+
+  #legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#legend-gradient {
+  width: 10%;
+  height: 30px;
+  border: 1px solid #333;
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0% 16%,
+    var(--color1) 16% 32%,
+    var(--color2) 32% 48%,
+    var(--color3) 48% 64%,
+    var(--color4) 64% 80%,
+    var(--color5) 80% 100%
+  );
+}
